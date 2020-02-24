@@ -90,12 +90,14 @@ public class Polynomial {
     }
 
     public Polynomial multiply(Polynomial p2) {
-        if (this.array.length > p2.array.length) {
-            for (int i = 0; i < this.array.length; i++) {
-
+        int [] temp = this.array;
+        this.array = new int[this.array.length + p2.array.length - 1];
+        for (int i = 0; i < temp.length; i++) {
+            for (int j = 0; j < p2.array.length; j++) {
+                this.array[i+j] += temp[i] * p2.array[j];
             }
         }
-        return null;
+        return this;
     }
 
     public void printArray() {
