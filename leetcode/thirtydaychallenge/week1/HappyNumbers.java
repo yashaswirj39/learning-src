@@ -1,6 +1,7 @@
 package leetcode.thirtydaychallenge.week1;
 
 /**
+ * https://leetcode.com/explore/challenge/card/30-day-leetcoding-challenge/528/week-1/3284/
  * Write an algorithm to determine if a number n is "happy".
  *
  * A happy number is a number defined by the following process: Starting with any positive integer,
